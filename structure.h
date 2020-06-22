@@ -1,23 +1,35 @@
 #pragma once
 #include <list>
+
+// holds 2 linked lists. representing each recursive function.
+
 template <class T>
 class structure
 {
 private:
-        T src;
-        T tmp;
-        T dest;
-        T n;
+        int size;
 
-        std::list<T>* lisp_p;
+        T* BrachPointer;
+        T* ActualPointer;
+
+        std::list<T> A_list;
+        std::list<T> B_list;
        
-        bool go_left;
+        
 public:
-    structure(T a, T b, T c, T nv, std::list<T>* stdltp, bool wtg) {
+    structure(int iv) {
+
+
 
 
 
         }
+    void RotateA();
+    void RotateB();
+
+
+
+        
 
 
 };

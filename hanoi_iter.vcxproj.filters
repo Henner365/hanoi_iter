@@ -18,18 +18,18 @@
     <ClCompile Include="hanoi_iter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="wc_toh_state_machine.cpp">
+    <ClCompile Include="structure.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="structure.cpp">
+    <ClCompile Include="state.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="wc_toh_state_machine.h">
+    <ClInclude Include="structure.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="structure.h">
+    <ClInclude Include="state.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

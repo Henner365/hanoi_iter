@@ -149,11 +149,11 @@
   <ItemGroup>
     <ClCompile Include="hanoi_iter.cpp" />
     <ClCompile Include="structure.cpp" />
-    <ClCompile Include="wc_toh_state_machine.cpp" />
+    <ClCompile Include="state.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="structure.h" />
-    <ClInclude Include="wc_toh_state_machine.h" />
+    <ClInclude Include="state.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
