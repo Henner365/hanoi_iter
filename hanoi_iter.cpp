@@ -1,11 +1,10 @@
 #include <iostream>
-#include <stack>
-#include <queue>
+#include "structure.h"
 
   /*
   It allows you simulate the system stack by declaring your own stack structure and manage the recursion.
    It is accomplished as follows:
-  i) Each time a recursive call is made in the algorithm, push the necessary information onto your stack.
+  i) Each time a recursive call is made in the algorithm, push the necessary information onto your stack.(linked list).
 
   ii) When you complete processing at this deeper level, pop the simulated stack frame 
   and continue processing in the higher level at the point dictated by the return address popped from the stack.
