@@ -148,10 +148,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="hanoi_iter.cpp" />
+    <ClCompile Include="Selector.cpp" />
     <ClCompile Include="structure.cpp" />
     <ClCompile Include="state.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Selector.h" />
     <ClInclude Include="structure.h" />
     <ClInclude Include="state.h" />
   </ItemGroup>

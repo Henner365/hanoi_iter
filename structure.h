@@ -1,6 +1,6 @@
 #pragma once
 #include <list>
-#include <stack>
+#include "Selector.h"
 #include "state.h"
 
 // holds 2 linked lists. representing each recursive function.
@@ -22,50 +22,35 @@ class structure
 {
 private:
         int size;
-        std::stack<int> control;
-
-        state* BrachPointer;
-        state* ActualPointer;
-
+        
         std::list<state> A_list;
-        std::list<state> B_list;
+        std::list<state> FLL;
        
         
 public:
-    structure(int iv) {
+        structure(int iv) {
 
+        Selector select(iv);
 
-
-        state sta('a', 'b', 'c', iv, nullptr);
+        state sta('a', 'b', 'c', iv);
         
         
-        for (int h = 0; h < iv; h++)
-            control.push(1);
-
-
+       
+        // make LL A
         for (int i = 0; i < iv; iv++)
         {
-            state inp(sta.get(1),sta.get(3),sta.get(2),i, nullptr);
+            state inp(sta.get(1),sta.get(3),sta.get(2),i);
             A_list.push_back(inp);
         
         
         }
 
-        for (int j = 0; j < iv; iv++)
-        {
-            state inp(sta.get(2), sta.get(1), sta.get(3), j, nullptr);
-            B_list.push_back(inp);
 
 
 
         }
-
-
-
-
-        }
-    void RotateA();
-    void RotateB();
+    //void RotateA();
+    ///void RotateB();
 
 
 
