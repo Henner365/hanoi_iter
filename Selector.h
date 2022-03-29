@@ -3,7 +3,9 @@
 #include <iostream>
 
 /*
-create a selector , who produce the string of numbers
+create a selector type.
+
+who produce the string of numbers
 
 moves F, I in relation to rings N.
 

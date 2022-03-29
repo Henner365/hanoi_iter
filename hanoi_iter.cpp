@@ -4,6 +4,7 @@
   /*
   It allows you simulate the system stack by declaring your own stack structure and manage the recursion.
    It is accomplished as follows:
+
   i) Each time a recursive call is made in the algorithm, push the necessary information onto your stack.(linked list).
 
   ii) When you complete processing at this deeper level, pop the simulated stack frame 
@@ -40,6 +41,7 @@
 
 int main()
 {
+
     int antal;
     std::cout << "get me antal : ";
     std::cin >> antal;
