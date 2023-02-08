@@ -28,7 +28,16 @@
 
     They represent each function in the recursive call seen above here.
 
-
+    06-03-23
+    was thinking on the way home from Lidl if there is a pattern in the movement direction
+    Right movement , Left movement { R , L }
+    distance 1  or 2
+    n= X
+    X=1 {R 2}
+    X=2{ R 1, R 2, R 1 }
+    X=3{ R 2 ,R 1, L 1, R 2, L 1, R 1, R 2 }                                             2xR, L,   R  , L  ,  2x R
+    X=4{ R 1, R 2, R 1, R 1, L 2, L 1, R 1, R 2, R 1, L 1, L 2, R 1, R 1, R 2, R 1 }     4*R, 2*L, 3*R, 2*L,  4*R       
+    x=5{ R 2, R 1, L 1, R 2, L 1, R 1, R 2, R 1, L 1, L 2, L 1, L 1, R 2, R 1, L 1, R 2, 2*R, L,   R  , L  ,  3*R , 4 L , 2*R 
 
   */
 
