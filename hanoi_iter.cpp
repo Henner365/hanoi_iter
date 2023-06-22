@@ -1,5 +1,6 @@
 #include <iostream>
-#include "structure.h"
+//#include "structure.h"
+#include "Selector.h"
 
   /*
   It allows you simulate the system stack by declaring your own stack structure and manage the recursion.
@@ -31,13 +32,42 @@
     06-03-23
     was thinking on the way home from Lidl if there is a pattern in the movement direction
     Right movement , Left movement { R , L }
-    distance 1  or 2
-    n= X
+    distance either  1 || 2
+    n = X
     X=1 {R 2}
-    X=2{ R 1, R 2, R 1 }
-    X=3{ R 2 ,R 1, L 1, R 2, L 1, R 1, R 2 }                                             2xR, L,   R  , L  ,  2x R
-    X=4{ R 1, R 2, R 1, R 1, L 2, L 1, R 1, R 2, R 1, L 1, L 2, R 1, R 1, R 2, R 1 }     4*R, 2*L, 3*R, 2*L,  4*R       
-    x=5{ R 2, R 1, L 1, R 2, L 1, R 1, R 2, R 1, L 1, L 2, L 1, L 1, R 2, R 1, L 1, R 2, 2*R, L,   R  , L  ,  3*R , 4 L , 2*R 
+    X=2 { R 1, R 2, R 1 }
+                        Piv
+    X=3 { R 2 ,R 1, L 1, R 2, L 1, R 1, R 2 }
+
+        ->        2*R,  L,   R,   L,  2*R
+                                             Piv    
+    X=4 { R 1, R 2, R 1, R 1, L 2, L 1, R 1, R 2, R 1, L 1, L 2, R 1, R 1, R 2, R 1 }     
+          
+        ->        4*R,  2*L,  3*R,  2*L,   4*R    
+
+        ->        X=2 seq | R, 2*L | X=2 seq | 2*L , R | X=2 seq
+                                                                                     Piv    
+    x=5 { R 2, R 1, L 1, R 2, L 1, R 1, R 2, R 1, L 1, L 2, L 1, L 1, R 2, R 1, L 1, R 2,
+         L 1, R 1, R 2, L 1, L 1, L 2, L 1, R 1 , { X=3 sekvens }.
+                
+        ->       2*R,  L,   R,   L,   2*R, |  R,  4*L,  2*R,  L,  R,  L,  2*R,  4*L,  R , |  2*R,  L,  R,  L, 2*R.
+                        X=3 seq                                  Piv                                   X=3 seq
+
+
+        ->       X=3 seq | R, 4*L | X=3 seq | 4*L, R | X=3 seq
+
+    x=6 ->       X=4 seq | R, 
+
+
+
+
+
+
+
+
+
+
+
 
   */
 
@@ -50,9 +80,13 @@
 
 int main()
 {
+    int N = 5;
+
+    Selector sl(N);
+    
 
     int antal;
-    std::cout << "get me antal : ";
+    //std::cout << "get me antal : ";
     std::cin >> antal;
     return 0;
 }
