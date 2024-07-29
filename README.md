@@ -9,3 +9,9 @@ model of it. They filmed his methods how he did it in handwriting, but i guess
 that must have been the recursive model he came up with.
 
 ;)
+
+I have advanced quite a bit on this program.
+Or i was stuck with the theory b4.
+Now i have the theory in place.
+I have explained it here :
+https://www.equato.dk/hanoi.html
