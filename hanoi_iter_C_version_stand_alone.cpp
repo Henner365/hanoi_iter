@@ -28,7 +28,7 @@ int x=0,OnePos=1,TwoPos=1, pos=0, displacement=0; // universal counter;
 
 int N=4; // how many rings.
 
-// lige eller ulige udgangsposition.
+// even or odd origin number of rings. 
 bool even = true;  if((N % 2)>0){even=false;};
 
 // game is not finished at the start.
@@ -102,11 +102,12 @@ while(!two_empty_poles)
                 // postcondition. two_empty_poles might be true. OneTwo stack moved to OneTwoPos either 1 2 or 3.
 
 
+                // debug porpose printout test
                 std::cout<<"\n A: ";printstack(A);
         std::cout<<"\n B: ";printstack(B);
         std::cout<<"\n C: ";printstack(C);
         std::cout<<"--------------------------\n";
-
+                // end debug purpose printout test
 
 
                                 if(x==3){OneTwo=false; // no longer inside ontwo sequence
@@ -119,7 +120,7 @@ while(!two_empty_poles)
                                 // Next move is a pivot.
 
 
-                   // outside the onetwo sequence
+                   // If you are here you are outside the onetwo move sequence
 
 
           // precondition. enter only if two_empty_poles are not true.
