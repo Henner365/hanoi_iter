@@ -10,38 +10,44 @@ bool pivot( std::stack<int>&X,  std::stack<int>&Y);
 
 int main(int argc, const char** argv){
 
-// game start variables init
+//////////////////////////////////////////// game start variables init
 
 // ring 1-2-1  distances to move right. In the onetwo stack
+
 int even_move_sequence[3]={1,2,1};
 int odd_move_sequence[3]={2,1,2};
 
 // witch pole is onetwo stack placed on.
+// at the beginning of the game the rings One and Two  are both on pole 1 or A.
+// Unless ofcourse there are only One ring.        
 
-int OneTwoPos = 1; // at the beginning of the game the ont two rings are both on pole 1 or A.
+int OneTwoPos = 1; 
 
 //  x general counter .
-//  one ring position. Two ring position. actual Position
-//  how far right the ring is to be displaced,
+//  One ring position. Two ring position. actual Position
+//  How far to the right will the ring have to be displaced.
 
-int x=0,OnePos=1,TwoPos=1, pos=0, displacement=0; // universal counter;
+int x=0;
+int  OnePos=1,TwoPos=1, pos=0
+int displacement=0; 
 
-int N=4; // how many rings.
+// how many rings.        
+        
+int N=4; 
 
 // even or odd origin number of rings. 
+
 bool even = true;  if((N % 2)>0){even=false;};
 
 // game is not finished at the start.
+
 bool two_empty_poles=false;
 
 // inside the OneTwo sequence loop.
+
 bool OneTwo = true;
 
-// end game start init.
-
-
-
-
+///////////////////////////////////////////// end game start init.
 
 
 
@@ -51,8 +57,9 @@ std::stack<int> A,B,C;
 
 // end create 3 empty stacks
 
+        
 
-// fill up initial left stack A with N rings
+//////////////////////////////////////// fill up initial left stack A with N rings
 
 int  antal = N;
 do {
@@ -60,13 +67,16 @@ A.push(antal--);
 }
 while (antal>0);
 
-// ********* end fill initial  left stack A with N rings
+//////////////////////////////////////// end fill initial  left stack A with N rings
 
+
+        //debug prints:
         std::cout<<"\n A: ";printstack(A);
         std::cout<<"\n B: ";printstack(B);
         std::cout<<"\n C: ";printstack(C);
 
-//  ************* main loop
+        
+//////////////////////////////////////// main loop
 
 while(!two_empty_poles)
 {
@@ -120,7 +130,7 @@ while(!two_empty_poles)
                                 // Next move is a pivot.
 
 
-                   // If you are here you are outside the onetwo move sequence
+                   // If you are here you are outside the onetwo move sequence, and ready to pivot.
 
 
           // precondition. enter only if two_empty_poles are not true.
@@ -157,27 +167,16 @@ while(!two_empty_poles)
 
 }
 
-//****************** end main loop
+////////////////////////////////////////////// end main loop
 
 
-
-
-
-
-//std::cout<<A.top()<<"\n\t";;
-//std::cout<<(int)A.size()<<" er stak stoerelsen paa A \n"<<std::endl;
-//std::cout<<(int)B.size()<<" er stak stoerelsen paa B \n"<<std::endl;
-//std::cout<<(int)C.size()<<" er stak stoerelsen paa C \n"<<std::endl;
-
-//printstack(C);
-/*B.swap(A);ps(B);C.swap(B);ps(C);*/
 
 
 
 
 
 return 0;
-} // end main
+} // end main()
 
 
 
