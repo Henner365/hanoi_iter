@@ -28,7 +28,7 @@ int OneTwoPos = 1;
 //  How far to the right will the ring have to be displaced.
 
 int x=0;
-int  OnePos=1,TwoPos=1, pos=0
+int  OnePos=1,TwoPos=1, pos=0;
 int displacement=0; 
 
 // how many rings.        
