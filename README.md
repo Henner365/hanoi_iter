@@ -15,3 +15,10 @@ Or i was stuck for some time with the theory b4.
 Now i have the theory in place.
 I have explained it metimeticulously here :
 https://www.equato.dk/hanoi.html
+
+I have since also made some effords to come up
+with a 'stateless' solution based on number and 
+equations only.
+
+After some efford i found a remarkable uncomplicated solution.
+Wikipedia has some good info about it to.
