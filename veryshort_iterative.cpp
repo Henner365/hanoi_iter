@@ -1,6 +1,11 @@
 #include <iostream>
 
 // for all even numbers of N. Explanation & un-even will be available soon. + win versions On a URL.
+// a near finished explanation to the code is here :
+// https://equato.dk/hanoi_statefree.php
+//
+//
+
 void write_it_out(int i);
 
 int main(int argc, char *argv[])
