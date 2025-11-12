@@ -2,7 +2,9 @@
 #include<cmath>
 int main()
 {
-// solution for both ODD or EVEN and fram A->C and A-B all in one with a for loop. 
+// solution for both ODD and EVEN and from A -> C and A -> B all in one with a for loop. 
+// change atoc to false to get A -> B movement. True to get A -> C.
+// choose any N odd or EVEN.
 	
   bool atoc=true;// atoc true means A->C. atoc false means A -> B 
   int n{0},frompole,f,f2,topole;
@@ -39,6 +41,7 @@ for ( n = 1; n<= flyt;n++)
     } // end for
 return 0;
 }
+
 
 
 
