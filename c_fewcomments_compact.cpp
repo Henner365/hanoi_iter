@@ -2,7 +2,7 @@
 #include<cmath>
 int main()
 {
-// solution for ODD or EVEN and fram A->C and A-B all in one with a for loop. 
+// solution for both ODD or EVEN and fram A->C and A-B all in one with a for loop. 
 	
   bool atoc=true;// atoc true means A->C. atoc false means A -> B 
   int n{0},frompole,f,f2,topole;
@@ -39,6 +39,7 @@ for ( n = 1; n<= flyt;n++)
     } // end for
 return 0;
 }
+
 
 
 
