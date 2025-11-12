@@ -3,6 +3,7 @@
 int main()
 {
 
+	
   bool atoc=true;// atoc true means A->C. atoc false means A -> B 
   int n{0},frompole,f,f2,topole;
   int N=4;
@@ -38,5 +39,6 @@ for ( n = 1; n<= flyt;n++)
     } // end for
 return 0;
 }
+
 
 
