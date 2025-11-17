@@ -14,7 +14,7 @@ I have advanced quite a bit on this program.
 Or i was stuck for some time with the theory b4.
 Now i have the theory in place.
 I have explained it metimeticulously here :
-https://www.equato.dk/hanoi.php
+https://equato.dk/hanoi_statefree.php
 
 I have since also made some effords to come up
 with a 'stateless' solution based on number and 
