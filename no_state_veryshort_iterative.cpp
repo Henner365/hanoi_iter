@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 // state-free solution for all positive integer numbers N. 
 // an explanation to the code is here :
@@ -14,7 +15,7 @@ int main(int argc, char *argv[])
   int n,k,from,topole, seq;
   int N=4;
 int sq[]{2,1,3};
-int moves = (N*N)-1;
+int moves = std::pow(2,N)-1; // ( 2^N ) -1
 seq=0;
 for ( n = 1; n<= moves;n++){
       k= (n&(n-1))%3;
