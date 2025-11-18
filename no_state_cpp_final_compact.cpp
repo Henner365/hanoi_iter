@@ -2,9 +2,9 @@
 #include<cmath>
 int main()
 {
-// solution for both ODD and EVEN and from A -> C and A -> B all in one with a for loop.
+// solution for from A -> C and A -> B all in one with a for loop.
 // change atoc to false to get A -> B movement. True to get A -> C.
-// choose any N odd or EVEN.
+// choose any positive integer N odd or EVEN.
 
   bool atoc=true;//= true  atoc true means A->C. atoc false means A -> B
   int nActual{0},frompole,topole;
@@ -25,3 +25,4 @@ int main()
      } 
 	return 0;
 	}
+
