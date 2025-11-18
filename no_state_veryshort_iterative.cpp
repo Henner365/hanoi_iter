@@ -1,7 +1,7 @@
 #include <iostream>
 
-// for all even numbers of N. 
-// a near finished explanation to the code is here :
+// state-free solution for all positive integer numbers N. 
+// an explanation to the code is here :
 // https://equato.dk/hanoi_statefree.php
 // see no_state_cpp_final_compact.cpp for 
 // a compact A -> C , A -> B EVEN and ODD all in one solution.
