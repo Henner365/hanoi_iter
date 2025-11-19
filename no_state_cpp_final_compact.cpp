@@ -12,9 +12,9 @@ int main()
  
   // int sq[]{2,1,3} or |1,2,3}
   int sq[]{( 1 + (1 + N%2)%2),(1 +N%2),3};
-  int flyt = std::pow(2,N)-1;
+  int n = std::pow(2,N)-1;
 
-	for ( nActual = 1; nActual<= flyt;nActual++)
+	for ( nActual = 1; nActual<= n;nActual++)
     {
 	v=frompole=( (nActual&(nActual-1))*(1+N%2))%3;
 	if(atoc && frompole >0 )v=(1+frompole%2);
@@ -25,4 +25,5 @@ int main()
      } 
 	return 0;
 	}
+
 
