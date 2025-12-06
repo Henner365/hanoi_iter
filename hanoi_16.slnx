@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="hanoi_16.vcxproj" Id="9b493182-dcae-46a5-93c5-9451ddeb910e" />
+</Solution>
